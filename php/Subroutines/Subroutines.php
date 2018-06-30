@@ -23,6 +23,11 @@ function DoubleGlobals() {
     $val *= 2;
 }
 
+//modify params passed by reference
+function DoubleByRef(&$val) {
+    $val *= 2;
+}
+
 #main script
 #another global variable
 $val = 3;
@@ -40,4 +45,7 @@ DoubleGlobals();
 echo "Value of globalvar after function call: $globalvar\n";
 echo "Value of val after function call: $val\n";
 
+//ByRef params
+DoubleByRef($globalvar);
+echo "Value of globalvar after function call: $globalvar\n";
 ?>
