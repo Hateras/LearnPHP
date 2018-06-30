@@ -48,4 +48,6 @@ echo "Value of val after function call: $val\n";
 //ByRef params
 DoubleByRef($globalvar);
 echo "Value of globalvar after function call: $globalvar\n";
+
+//to do: call back functions
 ?>
